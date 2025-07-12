@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -34,20 +35,7 @@ const Navbar = () => {
         onClick={() => setMenuOpen(true)}
         aria-label="Open menu"
       >
-        <svg
-          width="32"
-          height="32"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M4 8h16M4 16h16"
-          />
-        </svg>
+        <FiMenu size={32} />
       </button>
       {/* Mobile Menu Overlay */}
       {menuOpen && (
@@ -58,20 +46,7 @@ const Navbar = () => {
             onClick={() => setMenuOpen(false)}
             aria-label="Close menu"
           >
-            <svg
-              width="28"
-              height="28"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
+            <FiX size={28} />
           </button>
           <ul className="flex flex-col gap-8 mt-12 mb-8 text-center w-full">
             <li className="text-[#5B5BF6] font-semibold text-lg">Home</li>
