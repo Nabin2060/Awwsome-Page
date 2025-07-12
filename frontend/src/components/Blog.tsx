@@ -1,5 +1,3 @@
-import React from "react";
-
 const blogPosts = [
   {
     date: "November 10, 2021",
@@ -11,7 +9,7 @@ const blogPosts = [
         alt="LaserNetUs Website Launch"
         className="w-full h-64 object-cover rounded-lg"
       />
-    )
+    ),
   },
   {
     date: "February 21, 2021",
@@ -23,7 +21,7 @@ const blogPosts = [
         alt="Orthopedic Practice"
         className="w-full h-64 object-cover rounded-lg"
       />
-    )
+    ),
   },
   {
     date: "July 03, 2021",
@@ -35,8 +33,8 @@ const blogPosts = [
         alt="Web Accessibility"
         className="w-full h-64 object-cover rounded-lg"
       />
-    )
-  }
+    ),
+  },
 ];
 
 const Blog = () => {

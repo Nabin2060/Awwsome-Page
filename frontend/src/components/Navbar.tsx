@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {
@@ -11,7 +11,7 @@ const Navbar = () => {
         <span className="text-[#222]">some</span>
         <span className="text-[#5B5BF6]">.</span>
       </div>
-      {/* Desktop Menu */}
+      {/* Desktop Menu ko lagi */}
       <div className="hidden md:flex items-center gap-12">
         <ul className="flex gap-12 list-none m-0 p-0 text-base font-semibold">
           <li className="text-[#5B5BF6] cursor-pointer drop-shadow">Home</li>
@@ -29,7 +29,7 @@ const Navbar = () => {
           Contact
         </button>
       </div>
-      {/* Hamburger Icon for Mobile */}
+
       <button
         className="md:hidden ml-auto focus:outline-none"
         onClick={() => setMenuOpen(true)}
@@ -37,7 +37,6 @@ const Navbar = () => {
       >
         <FiMenu size={32} />
       </button>
-      {/* Mobile Menu Overlay */}
       {menuOpen && (
         <div className="fixed inset-0 z-50 bg-white flex flex-col items-center justify-center transition-all">
           {/* Close Icon */}

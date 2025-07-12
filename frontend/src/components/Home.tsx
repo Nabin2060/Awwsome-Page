@@ -75,7 +75,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* Services Section ko */}
       <section className="py-16 md:py-20 pt-7">
         <div className="container mx-auto px-4 md:px-24">
           <div className="text-center mb-12 md:mb-16">
